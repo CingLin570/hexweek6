@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+
+<body>
+    <header class=" bannerIndex ">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <!-- 漢堡選單 -->
+                <div class="col d-md-none">
+                    <a href="#" class="mobile-link d-md-none ">
+                        <span class="material-icons text-black d-block">
+                            dehaze
+                        </span>
+                    </a>
+                </div>
+                <!-- logo -->
+                <div class="col col-md-6 text-center text-md-left">
+                    <a class="fontFamily-Raleway font-size24 p-0 text-black" href="index.html">Craftsman</a>
+                </div>
+                <!-- 產品列表 -->
+                <div class="col d-md-flex d-none justify-content-md-end">
+                    <ul class="d-flex align-items-center mb-0 text-black">
+                        <li>Product</li>
+                        <li class="pl-7">Blog</li>
+                        <li class="px-7">Contact</li>
+                        <li><span class="material-icons d-block">
+                        shopping_cart
+                        </span></li>
+                    </ul>
+                </div>
+                <!-- 購物車選單 -->
+                <div class="col text-right d-md-none">
+                    <span class="material-icons d-md-block">
+                        shopping_cart
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="aside w-100 d-md-none">
+        <div class="container">
+            <div class="d-flex justify-content-between pt-3">
+                <a href="#" class="mobile-close text-dark">
+                    <span class="material-icons">
+                        keyboard_backspace
+                    </span>
+                </a>
+                <span class="material-icons order-md-3">
+                    shopping_cart
+                </span>
+            </div>
+            <ul class="menu p-0">
+                <li>
+                    <a class="text-dark font-size-sm py-3 border-bottom" data-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">Product</a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body border-0">
+                            <ul class=" list-unstyled">
+                                <li class="py-3 text-secondary">All<sup>24</sup></li>
+                                <li class="py-3 text-secondary">Bowl<sup>10</sup></li>
+                                <li class="py-3 text-secondary">Cup<sup>8</sup></li>
+                                <li class="py-3 text-secondary">Plate<sup>3</sup></li>
+                                <li class="py-3 text-secondary">Vase<sup>3</sup></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="text-dark font-size-sm py-3 border-bottom" href="#">Blog</a></li>
+                <li><a class="text-dark font-size-sm py-3 border-bottom" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <%- contents %>
+
+    <!-- footerBanner -->
+    <section class="footerBanner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 py-4 py-md-0">
+                    <h2 class="text-white font-weight-bold pb-7 font-size32 font-size-md48">Subscribe for news and
+                        special offers!
+                    </h2>
+                    <div class="input-group">
+                        <input type="text" class="form-control emailInput border-info py-4 px-3"
+                            placeholder="Your email address" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-success font-weight-bold" type="button"
+                                id="button-addon2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-black">
+        <div class="container d-md-flex align-items-center justify-content-between text-white py-5">
+            <div class="d-md-flex align-items-center">
+                <a class="navbar-brand fontFamily-Raleway p-0 mb-7 m-md-0 text-white" href="#">Craftsman</a>
+                <small class="d-none d-md-block ml-3 text-info">© 2020. All Rights Reserved.</small>
+            </div>
+            <ul class="d-md-flex m-md-0 mb-7">
+                <li>Purchase Policy</li>
+                <li class="pl-md-7">Privacy Policy</li>
+                <li class="pl-md-7">Terms & Conditions</li>
+            </ul>
+            <small class="d-md-none text-info"">© 2020. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src=" https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src=" ./assets/js/vendors.js"></script>
+                <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

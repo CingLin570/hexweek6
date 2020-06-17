@@ -1,0 +1,80 @@
+.check{
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: '>';
+    }
+        //按鈕旋轉
+    .icon-reverse{
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    .breadcrumb{
+            
+                background-color: transparent;
+            
+        }
+        //訂單列表
+        .orderSummary{
+            .toggle{
+                &:checked ~ .order{
+                    border-radius: 4px 4px 0 0 ;
+                }
+                &:checked ~ .order .icon-reverse{
+                    transform: rotate(180deg);
+                }
+            }
+            .order{
+                border-radius: 4px;
+                padding: 18px 16px 19px 16px;
+            }
+            .orderContent{
+                border-radius: 0 0 4px 4px;
+            }
+            .img-h{
+                height: 48px;
+                width: 48px;
+            }
+            .summaryTotal{
+                .shipping{
+                    line-height: 36px;
+                }
+                .total{
+                    font-size: 24px;
+                }
+            }
+        }
+        // 表單
+        form{
+            input,select{
+                padding: 18px 16px 19px 16px;
+                height: auto;
+                color: $grayinput;
+        }
+        // 表單內容標題
+            .contactInformation{
+                font-size: 20px;
+                line-height: 24px;
+            }
+            // 購物地址區塊
+            .shippingAddress{
+                label{
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                .shippingPerson{
+                    .form-group{
+                        @include media-breakpoint-up(md){
+                            width: 49%;
+                        }
+                    }
+                }
+            }
+            // 下一步按鈕
+            .orderBtn{
+                padding-top: 19px;
+                padding-bottom: 18px;
+                @include media-breakpoint-up(md){
+                    width: 50%;
+                }
+            }
+        }
+}

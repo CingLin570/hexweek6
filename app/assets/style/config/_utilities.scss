@@ -1,0 +1,70 @@
+//字體大小
+
+.text-md-black{
+    @include media-breakpoint-up(md){
+    color: $black !important;
+    }
+}
+.text-md-left{
+    @include media-breakpoint-up(md){
+    text-align: left !important;
+    }
+}
+.font-size-sm{
+    font-size: $font-size-lg;
+}
+.font-size32{
+    font-size: $font-size-32;
+}
+.font-size20{
+    font-size: 20px;
+}
+.font-size24{
+    font-size: 24px;
+}
+.font-size48{
+    font-size: 48px;
+}
+.font-size-md48{
+    @include media-breakpoint-up(md){
+    font-size: $font-size-xl;
+    }
+}
+.font-md-size24{
+    @include media-breakpoint-up(md){
+    font-size: 24px;
+    }
+}
+//更換字體
+.fontFamily-Raleway{
+    font-family: 'Raleway', sans-serif;
+}
+//space
+.mb-125{
+    margin-bottom: 125px;
+}
+.mr-40{
+    margin-right: 40px;
+}
+
+.p-md-150{
+    @include media-breakpoint-up(md){
+    padding: 150px;
+    }
+}
+.p350{
+    @include media-breakpoint-up(md){
+    padding-right: 350px;
+    }
+}
+//圖片自適應
+.bg-cover{
+    background-size: cover;
+}
+.text-line-through{
+    text-decoration: line-through;
+}
+.a-w{
+    height: 24px;
+    width: 24px;
+}  
