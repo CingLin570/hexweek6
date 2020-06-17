@@ -1,0 +1,55 @@
+.payment{
+    .contactToggle[type="checkbox"]:checked{
+        & ~ .contactCollapse .contactConent{
+            border-radius: 0;
+            border-top: 0;
+        }
+        & ~ .contactCollapse{
+            display: block;
+        }
+        & ~ .contact p{
+            display: none !important;
+        }
+    }
+    .shipToggle[type="checkbox"]:checked{
+        & ~ .shipTo{
+            border-bottom: none !important;
+            border-radius: 0;
+            display: block;
+        }
+        & ~ .shipTocollapse{
+            display: block;
+        }
+        & ~ .shipTo p{
+            display: none !important;
+        }
+    }
+    //payment頁面
+    .contact{
+        border-radius: 4px 4px 0 0;
+        padding: 19px 16px 18px 16px;
+        color: $grayinput;
+        .title{
+            margin-right: 18px;
+            color:$black;
+        }
+    }
+    .shipTo{
+        padding: 19px 16px 18px 16px;
+        color: $grayinput;
+        border-radius: 0 0 4px 4px;
+        .title{
+            margin-right: 25px;
+            color: $black;
+        }
+            }
+    .content{
+        border-radius: 0 0 4px 4px;
+            }
+    .contactToggle:checked ~ .contact .icon-reverse{
+        transform: rotate(180deg);
+            }
+    .shipToggle:checked ~ .shipTo .icon-reverse{
+                transform: rotate(180deg);
+            }
+}

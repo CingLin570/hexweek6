@@ -1,0 +1,63 @@
+.header{
+  background-color: transparent;
+  z-index: 1;
+}
+.banner{
+  margin-top: -72px;
+  height: 640px;
+  @include media-breakpoint-up(md){
+    height: 800px;
+    }
+  .content{
+    p{
+      margin-bottom: 108px;
+      @include media-breakpoint-up(md){
+      color: $graylight !important;
+      }
+    }
+  }
+}
+
+.advertisementbg{
+    background-image: url(../images/index-5.jpg);
+    background-position: center center;
+    background-size: cover;
+    // height: 400px;
+}
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  .swiper-slide {
+    width: auto!important;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-h{
+    height: 240px;
+  }
+  .card{
+    width: 240px;
+  }
+  
+    .swiper-h{
+      @include media-breakpoint-up(lg){
+      height: 350px;
+      }
+    }
+    .card{
+      @include media-breakpoint-up(lg){
+      width: 350px;
+      }
+    }
+  
+}
