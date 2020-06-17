@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聯絡資訊</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bannerIndex">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-md-end">
+                <!-- logo -->
+                <div class="col-11">
+                    <a class="fontFamily-Raleway font-size24 p-0 text-black" href="index.html">Craftsman</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+<!-- 購買資訊內容 -->
+<section class="container payment check">
+    <div class="row flex-row-reverse justify-content-center">
+        <div class="col-md-4 col-12 orderSummary">
+            <div>
+                <input type="checkbox" class="toggle d-none" data-toggle="collapse" href="#multiCollapseExample1"
+                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1" id="order">
+                <label for="order" class="order d-flex justify-content-between align-items-center bg-gray mb-0">
+                    <p>
+                        Order Summary
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <span class="font-weight-bold">NT$4,760</span>
+                        <span class="material-icons icon-reverse d-md-none text-success">keyboard_arrow_down</span>
+                </label>
+            </div>
+        </div>
+        <!-- 購買明細 -->
+        <div class="summaryTotal collapse multi-collapse d-md-block" id="multiCollapseExample1">
+            <div class="card card-body orderContent bg-gray border-0">
+                <ul class=" border-bottom border-graywhite pb-3">
+                    <li class="d-flex align-items-center mb-2">
+                        <img src="./assets/images/img-1.jpg" alt="" class="img-h">
+                        <div class="d-flex justify-content-between flex-grow-1 ml-3">
+                            <span>Tatami Cup ×1</span>
+                            <span>NT$1,080</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <img src="./assets/images/img-4.jpg" alt="" class="img-h">
+                        <div class="d-flex justify-content-between flex-grow-1 ml-3">
+                            <span>Baifan Bowl ×2</span>
+                            <span>NT$3,600</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="shipping border-bottom border-graywhite pt-3 pb-3">
+                    <li class="d-flex align-items-center justify-content-between">
+                        <span>
+                            Subtotal
+                        </span>
+                        <span>
+                            NT$4,680
+                        </span>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <span>
+                            Shipping
+                        </span>
+                        <span>
+                            NT$80
+                        </span>
+                    </li>
+                </ul>
+                <div class="total d-flex align-items-center justify-content-between font-weight-bold pt-3">
+                    <span>Total</span>
+                    <span>NT$4,760</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0">
+                <li class="breadcrumb-item"><a href="#" class="text-success">Cart</a></li>
+                <li class="breadcrumb-item"><a href="#" class="font-weight-bold text-black">Information</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-graylight">Payment</a></li>
+            </ol>
+        </nav>
+        <!-- 個人資料 -->
+        <form class="pb-4 border-bottom person">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="contactInformation">Information</label>
+                <input type="checkbox" class="contactToggle d-none" id="contact">
+                <label for="contact"
+                    class="contact d-flex border border-grayinput border-bottom-0 justify-content-between align-items-center mb-0">
+                    <div class="d-flex align-items-center">
+                        <div class="title">
+                            Contact
+                        </div>
+                        <p class="d-md-none">Joanne@mail.com…</p>
+                        <p class="d-none d-md-inline">Joanne Lin / Joanne@mail.com / +886 912-345-678</p>
+                    </div>
+                    <span class="material-icons icon-reverse text-success">keyboard_arrow_down</span>
+                </label>
+                <div class="collapse multi-collapse contactCollapse" id="multiCollapseExample2">
+                    <div class="contactConent content card card-body border-grayinput pt-0">
+                        <ul>
+                            <li>Joanne Lin</li>
+                            <li>Joanne@mail.com</li>
+                            <li>+886 912-345-678</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="checkbox" class="shipToggle d-none" id="ShipTo">
+                <label for="ShipTo"
+                    class="shipTo d-flex border border-grayinput justify-content-between align-items-center mb-0">
+                    <div class="d-flex align-items-center">
+                        <div class="title">
+                            Ship to
+                        </div>
+                        <p class=" d-md-none">3F., No. 2, Ln. 1, Hello 2nd…</p>
+                        <p class=" d-none d-md-inline">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung…</p>
+                    </div>
+                    <span class="material-icons icon-reverse text-success">keyboard_arrow_down</span>
+                </label>
+                <div class="shipTocollapse collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="shipcontent content card card-body border-grayinput border-top-0 pt-0">
+                        <ul>
+                            <li>3F., No. 2, Ln. 1, Hello 2nd Rd.,</li>
+                            <li>Woohoo Dist., Kaohsiung City 806,</li>
+                            <li>Taiwan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="shippingAddress">
+                <label for="exampleInputPassword1" class="">Credit Card</label>
+                <div>
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control border-grayinput" id="exampleInputPassword1" placeholder="Card number">
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control border-grayinput" id="exampleInputPassword1" placeholder="Name on card">
+                    </div>
+                </div>
+                <div class="shippingPerson d-md-flex flex-md-wrap justify-content-md-between">
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control border-grayinput" id="exampleInputPassword1" placeholder="Expiration date (MM / YY)">
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control border-grayinput" placeholder="Security code">
+                    </div>
+                </div>
+                <div class="form-group d-md-flex flex-md-row-reverse">
+                    <a href="done.html" class="orderBtn btn btn-success d-block font-weight-bold my-0 mr-0">
+                        Pay now</a>
+                    <a href="information.html"
+                        class="orderBtn btn text-success d-flex align-items-center justify-content-center"><span
+                            class="material-icons">
+                            keyboard_arrow_left
+                        </span>Return to information</a>
+                </div>
+            </div>
+        </form>
+        <ul class="d-md-flex">
+            <li class="mr-4 mb-3"><a href="#" class="text-graylight">Purchase Policy</a></li>
+            <li class="mr-4 mb-3"><a href="#" class="text-graylight">Privacy Policy</a></li>
+            <li><a href="#" class="text-graylight">Terms & Conditions</a></li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+    <script src=" ./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
