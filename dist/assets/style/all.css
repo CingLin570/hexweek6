@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -62,7 +61,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -7264,7 +7263,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7377,7 +7376,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -12533,7 +12532,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul, ol {
@@ -12635,6 +12634,15 @@ p {
   width: 24px;
 }
 
+.ejsGreen {
+  color: #0E8A00;
+  font-weight: bold;
+}
+
+.ejsBlack {
+  color: #000;
+}
+
 .aside {
   position: absolute;
   top: 0;
@@ -12651,7 +12659,10 @@ p {
   z-index: 100;
 }
 
-/*增加 class open 觸發選單*/
+.open {
+  overflow: hidden;
+}
+
 .open .main {
   -webkit-transform: translateX(270px);
       -ms-transform: translateX(270px);
@@ -12662,10 +12673,6 @@ p {
   -webkit-transform: translateX(0px);
       -ms-transform: translateX(0px);
           transform: translateX(0px);
-}
-
-.aside .menu li a {
-  display: block;
 }
 
 .banner .bannerbg {
@@ -12686,10 +12693,9 @@ p {
   }
 }
 
-@media (min-width: 768px) {
-  .banner .text-md-black {
-    color: #000 !important;
-  }
+.banner .shop {
+  padding-top: 19px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: 768px) {
@@ -12912,6 +12918,15 @@ body {
   right: 16px;
 }
 
+.pagination .text {
+  font-size: 1.5rem;
+}
+
+.card-img-top {
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.25rem - 1px);
+}
+
 .productDetail .onSale-icon {
   z-index: 1;
   top: 1.5rem;
@@ -13015,8 +13030,6 @@ body {
 }
 
 .modal.right .modal-dialog {
-  margin-top: auto;
-  margin-bottom: auto;
   max-width: 540px;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
@@ -13142,7 +13155,7 @@ body {
 }
 
 .information .confirm input:checked ~ .checkmark {
-  background-color: #28a745;
+  background-color: #0E8A00;
   border: 0px;
 }
 
@@ -13242,12 +13255,6 @@ body {
   height: 100vh;
 }
 
-@media (min-width: 768px) {
-  .done {
-    height: 800px;
-  }
-}
-
 .done .text {
   color: #fff;
   text-align: center;
@@ -13302,6 +13309,11 @@ body {
   .done .bannerbg {
     left: calc(50% + 15px);
   }
+}
+
+.done .continue {
+  padding-top: 19px;
+  padding-bottom: 18px;
 }
 
 /*# sourceMappingURL=all.css.map */

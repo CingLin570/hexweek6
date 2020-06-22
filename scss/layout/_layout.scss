@@ -1,3 +1,10 @@
+.ejsGreen{
+  color:$success;
+  font-weight: bold;
+}
+.ejsBlack{
+  color: $black;
+}
 .aside{
     position: absolute;
     top: 0;
@@ -9,16 +16,16 @@
     transition: all 0.8s;
     z-index: 100;
   }
-  /*增加 class open 觸發選單*/
+  //選單開啟時無法再往下滑動
+  .open{
+    overflow: hidden;
+  }
+  //增加 class open 觸發選單
 .open .main{
     transform: translateX(270px);
   }
   .open .aside{   
     transform: translateX(0px);
-  }
-
-  .aside .menu li a{
-    display: block;
   }
 //   .aside .menu li a:hover{
 //     background: blue;

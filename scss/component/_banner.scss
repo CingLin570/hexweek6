@@ -20,10 +20,8 @@
         //     padding-top: 188px;
         // }
     // }
-        .text-md-black{
-            @include media-breakpoint-up(md){
-            color: $black !important;
-            }
-        }
-    
+    .shop{
+        padding-top: 19px;
+        padding-bottom: 18px;
+    }
 }

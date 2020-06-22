@@ -12,3 +12,12 @@
     top: 16px;
     right: 16px;
 }
+.pagination{
+    .text{
+        font-size: 1.5rem;
+    }
+}
+.card-img-top{
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
+}
